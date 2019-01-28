@@ -1,7 +1,7 @@
 <?php
 
 Route::get('/', function () {
-    return redirect('/admin/home');
+    return 'hello';
 });
 
 // Authentication Routes...

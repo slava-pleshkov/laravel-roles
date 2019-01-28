@@ -6,10 +6,10 @@
         <ul class="sidebar-menu">
 
             <li>
-                <a href="{{ url('/') }}">
+                <router-link :to="{ name: 'home' }">
                     <i class="fa fa-wrench"></i>
                     <span class="title">@lang('quickadmin.qa_dashboard')</span>
-                </a>
+                </router-link>
             </li>
 
             <li class="treeview" v-if="$can('user_management_access')">

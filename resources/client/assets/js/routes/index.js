@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
+import Home from '../components/Home'
 import ChangePassword from '../components/ChangePassword.vue'
 import PermissionsIndex from '../components/cruds/Permissions/Index.vue'
 import PermissionsCreate from '../components/cruds/Permissions/Create.vue'
@@ -14,10 +15,10 @@ import UsersIndex from '../components/cruds/Users/Index.vue'
 import UsersCreate from '../components/cruds/Users/Create.vue'
 import UsersShow from '../components/cruds/Users/Show.vue'
 import UsersEdit from '../components/cruds/Users/Edit.vue'
-
 Vue.use(VueRouter)
 
 const routes = [
+    { path: '/home', component: Home, name: 'home' },
     { path: '/change-password', component: ChangePassword, name: 'auth.change_password' },
     { path: '/permissions', component: PermissionsIndex, name: 'permissions.index' },
     { path: '/permissions/create', component: PermissionsCreate, name: 'permissions.create' },
