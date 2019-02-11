@@ -66,7 +66,6 @@ return [
                 'stream' => 'php://stderr',
             ],
         ],
-
         'syslog' => [
             'driver' => 'syslog',
             'level' => 'debug',
