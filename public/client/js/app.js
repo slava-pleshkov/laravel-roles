@@ -24041,7 +24041,7 @@ var render = function() {
               attrs: { type: "button" },
               on: {
                 click: function($event) {
-                  _vm.destroyData(_vm.row.id)
+                  return _vm.destroyData(_vm.row.id)
                 }
               }
             },
